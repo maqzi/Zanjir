@@ -36,7 +36,6 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
-build/
 
 # Dependency directories
 node_modules/
@@ -110,3 +109,7 @@ dist
 # Scripts
 *.sh
 0_ganache-cli.txt
+
+# Keys
+.infura
+.secret
