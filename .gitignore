@@ -113,3 +113,6 @@ dist
 # Keys
 .infura
 .secret
+
+# Others (being extra careful)
+*.txt
