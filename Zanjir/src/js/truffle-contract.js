@@ -25,7 +25,7 @@ var contract = (function(module) {
     return this.provider.sendAsync.apply(this.provider, arguments);
   };
 
-  var BigNumber = (new Web3(Web3.givenProvider || "ws://localhost:8545")).toBigNumber(0).constructor;
+  var BigNumber = new Web3().BigNumber //new Web3().toBigNumber(0).constructor;
 
   var Utils = {
     is_object: function(val) {
@@ -433,7 +433,7 @@ var contract = (function(module) {
           return new self(self.address);
         }).then(fn);
       };
-
+      console.log("MUNAF DEPLOYED", val)
       return val;
     },
 
